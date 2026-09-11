@@ -16,11 +16,11 @@ TLS/protobuf overhead for an ESP32).
 
 ## Hardware
 
-| Component | Part | Notes |
-|---|---|---|
-| MCU board | Olimex ESP32-DevKit-Lipo (ESP32-WROVER-E) | **Must have 4MB PSRAM** — squeezelite-esp32's hard minimum. A plain ESP32-WROOM board (no PSRAM) will not work. |
-| DAC | Adafruit PCM5102 I2S DAC (line-level) | Chosen over a class-D amp module (e.g. MAX98357A) because the target is a stereo's line-in, not a speaker — the PCM5102 has no amplification stage, giving a cleaner, lower-power signal matched to line-in impedance. |
-| Display | Generic 0.96" SSD1306 OLED, 128×64, I2C, 4-pin | Confirm I2C address on the module (0x3C is standard; some ship 0x3D). |
+| Component | Part | Price | Notes |
+|---|---|---|---|
+| MCU board | [Olimex ESP32-DevKit-Lipo (ESP32-WROVER-E)](https://www.digikey.com/en/products/detail/olimex-ltd/ESP32-WROVER-DEVKIT-LIPO/19204279) | ~$9 | **Must have 4MB PSRAM** — squeezelite-esp32's hard minimum. A plain ESP32-WROOM board (no PSRAM) will not work, even if the listing looks nearly identical. |
+| DAC | [Adafruit PCM5102 I2S DAC (line-level)](https://www.digikey.com/en/products/detail/adafruit-industries-llc/6250/26249971) | ~$5 | Chosen over a class-D amp module (e.g. MAX98357A) because the target is a stereo's line-in, not a speaker — the PCM5102 has no amplification stage, giving a cleaner, lower-power signal matched to line-in impedance. |
+| Display | [Generic 0.96" SSD1306 OLED, 128×64, I2C, 4-pin](https://www.amazon.com/dp/B0D2RMQQHR) | ~$3.33 (3-pack ~$9.99) | Confirm I2C address on the module (0x3C is standard; some ship 0x3D). |
 
 ### Wiring
 
